@@ -252,6 +252,45 @@ body {
 .titulo {
   text-align: center;
   margin: 20px 0;
-  font-size: larger;
+  font-size: xx-large;
   margin-top: 100px;
+}
+
+.parrafo {
+  text-align: center;
+  margin: 50px 100px;
+  font-size: larger;
+  line-height: 1.8;
+}
+
+/* CONTENEDOR */
+.integrantes {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+/* LOGO DE FONDO */
+.bg-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(2px);
+  width: 60%;
+  max-width: 500px;
+
+  opacity: 0.08; /* súper importante */
+  pointer-events: none;
+
+  z-index: 1;
+}
+
+/* CARDS ARRIBA DEL LOGO */
+.card {
+  position: relative;
+  z-index: 2;
 }
